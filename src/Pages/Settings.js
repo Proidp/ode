@@ -151,7 +151,7 @@ const Settings = () => {
             </div>
         </header>
         <div className='main-wrapper__inner'>
-            <div className="navigation__wrapper">
+            <div className="navigation__wrapper setting-mobile-unvisible">
             <nav aria-label="Sidebar" className="navigation">
                 <div>
                     <ul className="navigation-links">

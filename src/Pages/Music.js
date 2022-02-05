@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
+import MobileRightMenu from './MobileRightMenu';
 import ThemeMode from './ThemeMode';
 
 const Music = () => {
@@ -82,7 +83,7 @@ const Music = () => {
                  <img src={logo} alt="logo" style={{ filter: "invert(1)" }} />
                </Link>
              </div>
-             <div className="header__center">
+             <div className="header__center mobile-unvisible">
                <form novalidate="" className="wunderbar__wrapper">
                  <div className="wunderbar" data-reach-combobox="">
                    <svg
@@ -121,30 +122,7 @@ const Music = () => {
                </div>
              </div>
              <div className="header__menu--right">
-               <div className="header__authButtons">
-                 <Link
-                   className="button button--link"
-                   aria-label="Log In"
-                   to="/login"
-                 >
-                   <span className="button__content">
-                     <span dir="auto" className="button__label">
-                       Log In
-                     </span>
-                   </span>
-                 </Link>
-                 <Link
-                   className="button button--primary"
-                   aria-label="Sign Up"
-                   to="/signup"
-                 >
-                   <span className="button__content">
-                     <span dir="auto" className="button__label">
-                       Sign Up
-                     </span>
-                   </span>
-                 </Link>
-               </div>
+               <MobileRightMenu/>
              </div>
            </div>
          </header>

@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import { Link } from "react-router-dom";
-import Homes from "../Components/Homes";
+import HelpInner from "../Components/HelpInner";
 import logo from "./logo.png";
 import MobileRightMenu from "./MobileRightMenu";
 import ThemeMode from "./ThemeMode";
@@ -9,7 +9,7 @@ import ThemeMode from "./ThemeMode";
 
 
 
-const Home = () => {
+const Help = () => {
 
 const [switchToggled, setSwitchToggled] = useState(true);
   const ToggleSwitch = () => {
@@ -1291,18 +1291,18 @@ const [switchToggled, setSwitchToggled] = useState(true);
               }
             ></div>
           </div>
-          <div
+          {/* <div
             className={
               switchToggled
                 ? "sidebar--pusher"
                 : "sidebar--pusher sidebar--pusher--open"
             }
-          >
+          > */}
               {/* Component start */}
-              <Homes/>
+              <HelpInner/>
               {/* Component End */}
             
-          </div>
+          {/* </div> */}
         </div>
       </div>
       
@@ -1310,4 +1310,4 @@ const [switchToggled, setSwitchToggled] = useState(true);
   )
 };
 
-export default Home;
+export default Help;
