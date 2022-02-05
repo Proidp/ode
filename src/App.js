@@ -28,7 +28,7 @@ import Following from "./Pages/Following";
 import NewsPolitics from "./Pages/NewsPolitics";
 import NewChannel from "./Pages/NewChannel";
 import Channel from "./Pages/Channel";
-import Test from "./Pages/Test";
+import Help from "./Pages/Help";
 
 function App() {
   return (
@@ -103,8 +103,8 @@ function App() {
         <Route path="/channels">
           <Channel/>
         </Route>
-        <Route path="/test">
-          <Test/>
+        <Route path="/help">
+          <Help/>
         </Route>
       </Switch>
     </Router>

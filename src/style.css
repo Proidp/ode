@@ -246,9 +246,45 @@
     background: yellow;
     padding: 10px;
 }
+.unvisible-desktop{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.wunderbar__mobile-search{
+    padding: calc(2rem/4);
+}
+.search-overlay-hidden{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
 @media (max-width:900px){
 
     .header__center .header__buttons{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header__authButtons.mobile-unvisible, .mobile-unvisible{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .unvisible-desktop{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .modal-overlay.search-overlay-active{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1150px) {
+    .setting-mobile-unvisible{
         display: none;
         visibility: hidden;
         opacity: 0;
