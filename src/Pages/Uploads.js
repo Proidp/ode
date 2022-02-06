@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
 import logo1 from '../xinotube_favicon.png';
-import Channelinner from '../Components/Channelinner';
+import UploadsInner from '../Components/UploadsInner'
 import AfterLogin from './AfterLogin';
 
 
 
-const Channel = () => {
+
+const Uploads = () => {
+
     const [switchToggled, setSwitchToggled] = useState(true);
     const ToggleSwitch = () => { 
           switchToggled ? setSwitchToggled(false) : setSwitchToggled(true);
@@ -521,15 +523,16 @@ const Channel = () => {
          </div>
          <div className={switchToggled ? "sidebar--pusher" : "sidebar--pusher sidebar--pusher--open"}>
          {/* Wallet Inner Content start */}
-            <Channelinner/>
+            <UploadsInner/>
          {/* Wallet Inner Content end */}
          </div>
       </div>
 
          
       </div>
-      </>
-  )
+
+  </>
+  );
 };
 
-export default Channel;
+export default Uploads;

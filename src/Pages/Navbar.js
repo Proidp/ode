@@ -50,7 +50,7 @@ const Navbar = () => {
                                </g>
                             </svg></span></button></span><Link aria-current="page"
                       className="button button--no-style header__navigationItem--logo active" title="Home" aria-label="Home"
-                      to="/"><img src={logo} alt="logo" style={{filter: "invert(1)"}}/></Link></div>
+                      to="/"><img src={logo} alt="logo" /></Link></div>
                 <div className="header__center mobile-unvisible">
                    <form novalidate="" className="wunderbar__wrapper">
                       <div className="wunderbar" data-reach-combobox=""><svg xmlns="http://www.w3.org/2000/svg"
