@@ -29,6 +29,11 @@ import NewsPolitics from "./Pages/NewsPolitics";
 import NewChannel from "./Pages/NewChannel";
 import Channel from "./Pages/Channel";
 import Help from "./Pages/Help";
+import Notification from "./Pages/Notification";
+import Uploads from "./Pages/Uploads";
+import Dashboard from "./Pages/Dashboard";
+import Rewards from "./Pages/Rewards";
+import Invite from "./Pages/Invite";
 
 function App() {
   return (
@@ -105,6 +110,21 @@ function App() {
         </Route>
         <Route path="/help">
           <Help/>
+        </Route>
+        <Route path="/notifications">
+          <Notification/>
+        </Route>
+        <Route path="/uploads">
+          <Uploads/>
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard/>
+        </Route>
+        <Route path="/Rewards">
+          <Rewards/>
+        </Route>
+        <Route path="/invite">
+          <Invite/>
         </Route>
       </Switch>
     </Router>

@@ -290,3 +290,12 @@
         opacity: 0;
     }
 }
+[data-valuetext="light"] svg.light{
+    display: none;
+}
+[data-valuetext="dark"] svg.dark{
+    display: none;
+}
+[theme="dark"] .header__menu--left a img{
+    filter: ininvert(0) !important;
+}
